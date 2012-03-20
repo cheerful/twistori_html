@@ -1,0 +1,239 @@
+* {
+  outline: none;
+}
+body {
+  background: #111;
+  font: 33px Helvetica, Arial, sans-serif;
+  letter-spacing: -3px;
+  margin: 8px;
+  margin-left: 0px;
+  overflow: hidden;
+}
+html {
+  overflow: hidden;
+}
+h1 {
+  position: absolute;
+  bottom: 264px;
+  font-size: 24px;
+  width: 200px;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -2px;
+  margin-left: 14px;
+  text-decoration: none;
+}
+*+html h1 {
+  bottom: 237px;
+}
+h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+#topics {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 200px;
+}
+h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 63px;
+  line-height: 59px;
+  overflow: hidden;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 14px;
+  cursor: pointer;
+  width: 200px;
+}
+h2.selected {
+  color: #fff;
+}
+h2 span {
+  padding-left: 2px;
+  padding-right: 6px;
+}
+#credits {
+  position: absolute;
+  left: 14px;
+  bottom: 11px;
+  width: 150px;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: -1px;
+  text-transform: lowercase;
+  color: #fff;
+  z-index: 1;
+}
+#items {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#items li {
+  color: #5c5c5c;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  padding-left: 200px;
+  padding-right: 20px;
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+}
+#items li div.tweet-wrapper {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#items li span.large {
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: -2px;
+}
+#items li em {
+  font-style: normal;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -3px;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.love { color: #a839b2 }
+.love.selected span { background-color: #a839b2 }
+#items li.love em { color: #a839b2 }
+
+.hate { color: #ff0071 }
+.hate.selected span { background-color: #ff0071 }
+#items li.hate em { color: #ff0071 }
+
+.think { color: #acd030 }
+.think.selected span { background-color: #acd030 }
+#items li.think em { color: #acd030 }
+
+.believe { color: #58aa00 }
+.believe.selected span { background-color: #58aa00 }
+#items li.believe em { color: #58aa00 }
+
+.feel { color: #00aa78 }
+.feel.selected span { background-color: #00aa78 }
+#items li.feel em { color: #00aa78 }
+
+.wish { color: #0074ae }
+.wish.selected span { background-color: #0074ae }
+#items li.wish em { color: #0074ae }
+
+.y2010, #items li.y2010 em { color: #f3c435 }
+.y2010.selected span { background-color: #f3c435 }
+
+.pirate, #items li.pirate em { color: #f3c435 }
+.pirate.selected span { background-color: #f3c435 }
+
+.ninja, #items li.ninja em { color: #f9934f }
+.ninja.selected span { background-color: #f9934f }
+
+.cowboy, #items li.cowboy em { color: #ff6600 }
+.cowboy.selected span { background-color: #ff6600 }
+
+.robot, #items li.robot em { color: #e54100 }
+.robot.selected span { background-color: #e54100 }
+
+.tired, #items li.tired em { color: #9bff65 }
+.tired.selected span { background-color: #9bff65 }
+
+.sleep, #items li.sleep em { color: #66ff7d }
+.sleep.selected span { background-color: #66ff7d }
+
+.nap, #items li.nap em { color: #66ffc9 }
+.nap.selected span { background-color: #66ffc9 }
+
+
+#sekret {
+  background: #000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+#sekret span.info {
+  display: block;
+  position: absolute;
+  color: #65c3ff;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: -1px;
+  top: -36px;
+  left: 14px;
+}
+
+#sekret div.shuffle, #sekret div.extras {
+  position: absolute;
+  top: -66px;
+  left: 14px;
+  font-size: 22px;
+  letter-spacing: -1px;
+  width: 100px;
+  font-weight: normal;
+}
+
+#sekret div.clusters {
+  margin-right: 20px;
+}
+
+#sekret div.extras {
+  left: 100px;
+  width: 600px;
+  color: #232323;
+}
+
+#sekret div.extras div span, #sekret div.clusters span {
+  cursor: pointer;
+}
+
+#sekret div.extras div {
+  display: inline;
+}
+
+#sekret div.shuffle span {
+  cursor: pointer;
+}
+
+#sekret div.wrapper {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #65c3ff;
+}
+
+#sekret h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #fff;
+  background: url(s.png) top left no-repeat #65c3ff;
+  position: absolute;
+  bottom: -16px;
+  height: 21px;
+  width: 143px;
+  padding-top: 15px;
+  padding-bottom: 1px;
+  text-indent: 10px;
+  left: 8px;
+  cursor:pointer;
+}
