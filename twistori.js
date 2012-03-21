@@ -5203,7 +5203,10 @@ var Twistori = Class.create({
     if(this.autostart) clearTimeout(this.autostart);
     $$('h2').each(function(item){
       item.morph('font-size:43px;line-height:40px', {duration:.7, after: function(){
-        $('logo').setStyle({visibility:'visible'}); $('credits').setStyle({visibility:'visible'});
+        if (!window.navigator.standalone) {
+          $('logo').setStyle({visibility:'visible'});
+          $('credits').setStyle({visibility:'visible'});
+        }
       }});
     });
   },
